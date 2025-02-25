@@ -11,7 +11,7 @@ public class FunctionalRecursion
     public static void main(String args[])
     {
         FunctionalRecursion fr = new FunctionalRecursion();
-        System.out.println(fr.sum(4));
+        System.out.println(fr.sum(3));
     }
 }
 

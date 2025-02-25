@@ -11,7 +11,8 @@ public class ReverseArray
         fun(i+1,arr,n);
     }
 
-    private void swap(int arr[], int i, int n) {
+    private void swap(int arr[], int i, int n) 
+    {
         int temp = arr[i];
         arr[i] = arr[n];
         arr[n] = temp;
@@ -37,7 +38,6 @@ public class ReverseArray
         {
             System.out.print(array[i]+" ");
         }
-       
     }
     
 }
