@@ -3,31 +3,31 @@ public class OccurencesOfElements
 {
     public static void main(String args[])
     {
-        int hash[]=new int[1000000];
+        int hash[] = new int[10000];
+        int n;
+        int count;
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the size of the array");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter size of array");
+        n=sc.nextInt();
+        int arr[] = new int [n];
 
-        System.out.println("Enter the elements of the array");
-        arr = new int[n];
+        System.out.println("Enter elements of array");
         for(int i=0;i<n;i++)
         {
             arr[i]=sc.nextInt();
         }
 
-        //Precompute 
+        //precompute
+
         for(int i=0;i<n;i++)
         {
             hash[arr[i]]+=1;
         }
+        System.out.println("Enter element you wanna count occurences for");
+        count=sc.nextInt();
 
-        System.out.println("Emter the number for checking occurencs");
-        int num=sc.nextInt();
-
-        //fetch
-        System.out.println("Occurences of a number are " +hash[num]);
+        System.out.println("Occurences of " +count+ " are " +hash[count]);
     }
 }
 

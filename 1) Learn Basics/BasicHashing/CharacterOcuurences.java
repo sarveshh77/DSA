@@ -23,3 +23,4 @@ public static void main(String[] args)
     System.out.println("Occurences of a character are " +hash[ch]);
 }
 }
+  
